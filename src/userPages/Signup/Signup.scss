@@ -1,0 +1,253 @@
+.mainsignupDiv1 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .bigDivS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 528px;
+    height: 600px;
+
+    @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+      width: 428px;
+      height: 550px;
+    }
+    @media (max-width: 540px) {
+      width: 95%;
+    }
+    .circleDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 60px;
+      padding: 30px;
+      margin: 0 auto;
+      border-radius: 50%;
+      box-shadow: 0px -20px 20px rgb(0 0 0 / 8%);
+      background-color: white;
+      z-index: 99;
+      @media (max-width: 400px) {
+        padding: 25px;
+      }
+      .circleDiv2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 108px;
+        height: 108px;
+        border: 2px solid var(--primary-color);
+        border-radius: 50%;
+        z-index: 999;
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 95px;
+          height: 95px;
+        }
+        @media (max-width: 540px) {
+          width: 90px;
+          height: 90px;
+        }
+        @media (max-width: 400px) {
+          width: 80px;
+          height: 80px;
+        }
+        .circleDiv2pic {
+          color: var(--primary-color);
+          font-size: 50px;
+          @media (max-width: 540px) {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+
+    .smallDivS {
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 528px;
+      height: 370px;
+      background: #ffffff;
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
+      z-index: 2;
+      border-radius: 6px;
+      justify-content: space-evenly;
+      @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+        width: 428px;
+        height: 320px;
+
+        justify-content: space-between;
+      }
+      @media (max-width: 1000px) {
+        padding-top: 50px;
+      }
+      @media (max-width: 540px) {
+        width: 100%;
+        padding-top: 45px;
+      }
+
+      .input-container {
+        display: flex;
+        width: 426px;
+        height: 58px;
+        background: #ebeaea;
+        border-radius: 5px;
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 350px;
+          height: 43px;
+        }
+        @media (max-width: 540px) {
+          width: 90%;
+        }
+        @media (max-width: 500px) {
+          width: 90%;
+          height: 43px;
+        }
+        .inputimgback {
+          display: flex;
+          background-color: var(--primary-color);
+          align-items: center;
+          justify-content: center;
+          width: 54px;
+          height: 58px;
+          border-radius: 5px 0px 0px 5px;
+          @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+            height: 43px;
+            width: 50px;
+          }
+          @media (max-width: 500px) {
+            height: 43px;
+          }
+        }
+        .inputimg {
+          font-size: 26px;
+          color: #ffffff;
+        }
+        .input-field {
+          width: 100%;
+          background: #ebeaea;
+          border: 0px;
+          font-size: 16px;
+          padding-left: 15px;
+          font-family: "Inter";
+        }
+        .input-field:focus {
+          outline: none;
+        }
+        ::placeholder {
+          font-family: "Inter";
+          font-weight: 400;
+          font-size: 16px;
+          color: #937a7a;
+          //  padding-left: 30px;
+        }
+      }
+      .check-container {
+        display: flex;
+        width: 426px;
+        align-items: center;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+          width: 350px;
+          height: 43px;
+        }
+        @media (max-width: 540px) {
+          width: 90%;
+        }
+
+        .form-check-input {
+          height: 14px;
+          width: 14px;
+          cursor: pointer;
+        }
+        .checkpS {
+          font-family: "Inter";
+          font-weight: 300;
+          font-size: 13px;
+          color: #464646;
+          margin-top: 0;
+          margin-left: 8px;
+          display: flex;
+        }
+        .checkp2 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          color: var(--primary-color);
+          text-decoration: none;
+          margin-left: 5px;
+        }
+        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+          color: var(--primary-color);
+        }
+      }
+      .smallDivp {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: rgb(255, 0, 0);
+
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+  .btn1 {
+    width: 198px;
+    height: 59px;
+    background: var(--primary-color);
+    color: #ffffff;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    @media only screen and (max-width: 1400px) and (min-width: 1000px) {
+      width: 170px !important;
+    }
+  }
+  .btn1:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    transition: all ease 0.3s;
+  }
+  .mainDivp1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #473d3d;
+  }
+  .mainimgDiv {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    .imgDiv {
+      width: 62px;
+      height: 50px;
+      background: #c54238;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .endimg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
